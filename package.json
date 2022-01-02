@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Sunflower Farmers contract",
   "author": "developer@sunflower-farmers.com",
-  "homepage": ".",
+  "homepage": "https://autofarmsunflower.github.io/autofarm/",
   "dependencies": {
     "@openzeppelin/contracts": "3.3.0",
     "@truffle/hdwallet-provider": "1.1.0",
@@ -24,6 +24,7 @@
     "decimal.js-light": "^2.5.1",
     "dotenv": "8.2.0",
     "ethereumjs-tx": "^2.1.2",
+    "gh-pages": "^3.2.3",
     "react": "16.13.1",
     "react-bootstrap": "1.3.0",
     "react-dom": "16.13.1",
@@ -43,7 +44,9 @@
     "lint-fix": "prettier --write \"./**/*.{js,ts,json,sass,scss,css}\" --loglevel log",
     "prepare": "if [ ! -d '.husky' ]; then husky install; fi",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
