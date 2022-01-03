@@ -1,32 +1,31 @@
 {
   "files": {
-    "main.css": "/autofarm/static/css/main.ebb21c3c.chunk.css",
-    "main.js": "/autofarm/static/js/main.4e231db2.chunk.js",
-    "main.js.map": "/autofarm/static/js/main.4e231db2.chunk.js.map",
+    "main.css": "/autofarm/static/css/main.429a50eb.chunk.css",
+    "main.js": "/autofarm/static/js/main.478e9654.chunk.js",
+    "main.js.map": "/autofarm/static/js/main.478e9654.chunk.js.map",
     "runtime-main.js": "/autofarm/static/js/runtime-main.9c9d4a80.js",
     "runtime-main.js.map": "/autofarm/static/js/runtime-main.9c9d4a80.js.map",
     "static/css/2.963765e0.chunk.css": "/autofarm/static/css/2.963765e0.chunk.css",
-    "static/js/2.4b671f57.chunk.js": "/autofarm/static/js/2.4b671f57.chunk.js",
-    "static/js/2.4b671f57.chunk.js.map": "/autofarm/static/js/2.4b671f57.chunk.js.map",
+    "static/js/2.1f451341.chunk.js": "/autofarm/static/js/2.1f451341.chunk.js",
+    "static/js/2.1f451341.chunk.js.map": "/autofarm/static/js/2.1f451341.chunk.js.map",
     "index.html": "/autofarm/index.html",
-    "precache-manifest.7473e5ed54e642f445daa5bc051785ea.js": "/autofarm/precache-manifest.7473e5ed54e642f445daa5bc051785ea.js",
+    "precache-manifest.77f7102fef05a831ec2b599d92c17940.js": "/autofarm/precache-manifest.77f7102fef05a831ec2b599d92c17940.js",
     "service-worker.js": "/autofarm/service-worker.js",
     "static/css/2.963765e0.chunk.css.map": "/autofarm/static/css/2.963765e0.chunk.css.map",
-    "static/css/main.ebb21c3c.chunk.css.map": "/autofarm/static/css/main.ebb21c3c.chunk.css.map",
-    "static/js/2.4b671f57.chunk.js.LICENSE.txt": "/autofarm/static/js/2.4b671f57.chunk.js.LICENSE.txt",
+    "static/css/main.429a50eb.chunk.css.map": "/autofarm/static/css/main.429a50eb.chunk.css.map",
+    "static/js/2.1f451341.chunk.js.LICENSE.txt": "/autofarm/static/js/2.1f451341.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/autofarm/static/media/logo.51c12428.png",
     "static/media/speed-up.png": "/autofarm/static/media/speed-up.afdb2d67.png",
     "static/media/spinning_coin.gif": "/autofarm/static/media/spinning_coin.9a61915e.gif",
     "static/media/white-eating-chicken-two.gif": "/autofarm/static/media/white-eating-chicken-two.2484a046.gif",
     "static/media/white-eating-chicken.gif": "/autofarm/static/media/white-eating-chicken.63b53c16.gif",
-    "static/media/white-walking-chicken.gif": "/autofarm/static/media/white-walking-chicken.8fd941f1.gif",
-    "static/media/willow_tree.mp3": "/autofarm/static/media/willow_tree.70fb5690.mp3"
+    "static/media/white-walking-chicken.gif": "/autofarm/static/media/white-walking-chicken.8fd941f1.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.9c9d4a80.js",
     "static/css/2.963765e0.chunk.css",
-    "static/js/2.4b671f57.chunk.js",
-    "static/css/main.ebb21c3c.chunk.css",
-    "static/js/main.4e231db2.chunk.js"
+    "static/js/2.1f451341.chunk.js",
+    "static/css/main.429a50eb.chunk.css",
+    "static/js/main.478e9654.chunk.js"
   ]
 }
