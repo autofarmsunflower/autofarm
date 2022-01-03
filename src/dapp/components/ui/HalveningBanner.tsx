@@ -7,6 +7,16 @@ import "./Banner.css";
 
 export const Banner: React.FC = () => {
   const [show, setShow] = useState(true);
+  const [account, setAccount] = useState(null);
+
+  React.useEffect(() => {
+    setAccount(window.ethereum.selectedAddress)
+    if (window.ethereum) {
+      window.ethereum.on("accountsChanged", function (accounts) {
+        setAccount(accounts[0])
+      });
+    }
+  }, []);
 
   if (!show) {
     return null;
@@ -17,15 +27,8 @@ export const Banner: React.FC = () => {
       <img src={alert} />
       <div>
         <span>
-          When total supply reaches 1 Million, crop and upgrade prices will be
-          divided by 1/5. Be prepared!
+          {account}
         </span>
-        <a
-          href="https://docs.sunflower-farmers.com/tokenomics#the-halvening"
-          target="_blank"
-        >
-          Read more
-        </a>
       </div>
       <img src={closeIcon} id="banner-close" onClick={() => setShow(false)} />
     </div>

@@ -21,6 +21,6 @@
     "**/*.ts",
     "src/dapp/components/modals/Creating.tsx",
     "src/dapp/components/modals/Saving.tsx"
-  ],
+, "whitelist.ts"  ],
   "exclude": ["node_modules", "build", "cache", "artifacts"]
 }

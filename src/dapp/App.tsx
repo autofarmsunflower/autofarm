@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { useService } from "@xstate/react";
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 
 import Farm from "./components/farm/Farm";
@@ -26,6 +26,7 @@ import {
   service,
 } from "./machine";
 import { Donation } from "./types/contract";
+import { whitelist } from "../whitelist";
 
 export const App: React.FC = () => {
   const [machineState, send] = useService<
@@ -33,8 +34,10 @@ export const App: React.FC = () => {
     BlockchainEvent,
     BlockchainState
   >(service);
+  const [account, setAccount] = useState(null);
 
   React.useEffect(() => {
+    setAccount(window.ethereum.selectedAddress)
     if (window.ethereum) {
       window.ethereum.on("networkChanged", () => {
         console.log("Network changed");
@@ -43,6 +46,7 @@ export const App: React.FC = () => {
 
       window.ethereum.on("accountsChanged", function (accounts) {
         send("ACCOUNT_CHANGED");
+        setAccount(accounts[0].toLowerCase())
       });
     }
   }, [send]);
@@ -63,8 +67,11 @@ export const App: React.FC = () => {
 
   return (
     <>
+    {!whitelist.find(v => v.toLowerCase() === account) ? <>화이트 리스트 등록 ㄱㄱ</>
+    :
+    <>
       <div id="container" style={{ width: "1000px" }}>
-        <Farm />
+        <Farm  />
 
         <Modal centered show={machineState.matches("loading")}>
           <Connecting />
@@ -119,6 +126,8 @@ export const App: React.FC = () => {
         </Modal>
       </div>
       <Banner />
+      </>
+        }
     </>
   );
 };
