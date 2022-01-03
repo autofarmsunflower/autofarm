@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/autofarm/static/css/main.70766388.chunk.css",
-    "main.js": "/autofarm/static/js/main.a9d08a96.chunk.js",
-    "main.js.map": "/autofarm/static/js/main.a9d08a96.chunk.js.map",
+    "main.js": "/autofarm/static/js/main.9db78b53.chunk.js",
+    "main.js.map": "/autofarm/static/js/main.9db78b53.chunk.js.map",
     "runtime-main.js": "/autofarm/static/js/runtime-main.9c9d4a80.js",
     "runtime-main.js.map": "/autofarm/static/js/runtime-main.9c9d4a80.js.map",
     "static/css/2.963765e0.chunk.css": "/autofarm/static/css/2.963765e0.chunk.css",
     "static/js/2.1f451341.chunk.js": "/autofarm/static/js/2.1f451341.chunk.js",
     "static/js/2.1f451341.chunk.js.map": "/autofarm/static/js/2.1f451341.chunk.js.map",
     "index.html": "/autofarm/index.html",
-    "precache-manifest.19dac722910fc5c24c05477df7f681fc.js": "/autofarm/precache-manifest.19dac722910fc5c24c05477df7f681fc.js",
+    "precache-manifest.830778572f47e025e55568e31f5f8b83.js": "/autofarm/precache-manifest.830778572f47e025e55568e31f5f8b83.js",
     "service-worker.js": "/autofarm/service-worker.js",
     "static/css/2.963765e0.chunk.css.map": "/autofarm/static/css/2.963765e0.chunk.css.map",
     "static/css/main.70766388.chunk.css.map": "/autofarm/static/css/main.70766388.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.963765e0.chunk.css",
     "static/js/2.1f451341.chunk.js",
     "static/css/main.70766388.chunk.css",
-    "static/js/main.a9d08a96.chunk.js"
+    "static/js/main.9db78b53.chunk.js"
   ]
 }
