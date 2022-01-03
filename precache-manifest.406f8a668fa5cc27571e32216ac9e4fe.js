@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "463ca22b2b3a6609143402cfff8ab342",
+    "revision": "4eb1803bdbd1e6b5c825ac2a0db52690",
     "url": "/autofarm/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/autofarm/static/css/2.963765e0.chunk.css"
   },
   {
-    "revision": "9e40d71f87215f72605f",
-    "url": "/autofarm/static/css/main.429a50eb.chunk.css"
+    "revision": "c07bf270a470c9ab93a0",
+    "url": "/autofarm/static/css/main.70766388.chunk.css"
   },
   {
     "revision": "c7eafb57b50d3c99acbf",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/autofarm/static/js/2.1f451341.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e40d71f87215f72605f",
-    "url": "/autofarm/static/js/main.5b8eb0db.chunk.js"
+    "revision": "c07bf270a470c9ab93a0",
+    "url": "/autofarm/static/js/main.59ce6542.chunk.js"
   },
   {
     "revision": "f9fb3e09216932471e36",
