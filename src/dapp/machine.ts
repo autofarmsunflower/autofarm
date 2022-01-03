@@ -195,8 +195,7 @@ export const blockChainMachine = createMachine<
       on: {
         GET_STARTED: [
           {
-            target: "unsupported",
-            cond: isMobile,
+            target: "loading",
           },
           {
             target: "loading",
