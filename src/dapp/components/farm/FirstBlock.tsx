@@ -38,31 +38,6 @@ export const FirstBlock: React.FC<Props> = ({
     }
   }, [land, balance]);
 
-  React.useEffect(() => {
-    const test = setInterval(() => {
-      // 심어야됨.
-      if (land[0].fruit === "0") onPlant(0);
-      if (land[1].fruit === "0") onPlant(1);
-      if (land[2].fruit === "0") onPlant(2);
-      if (land[3].fruit === "0") onPlant(3);
-      if (land[4].fruit === "0") onPlant(4);
-      // 수확해야행~
-      // if (land[0].fruit === "2") onHarvest(0);
-      // if (land[1].fruit === "2") onHarvest(1);
-      // if (land[2].fruit === "2") onHarvest(2);
-      // if (land[3].fruit === "2") onHarvest(3);
-      // if (land[4].fruit === "2") onHarvest(4);
-
-      console.log("니가 심은 작물 리스트");
-      console.log(land[0].fruit);
-      console.log(land[1].fruit);
-      console.log(land[2].fruit);
-      console.log(land[3].fruit);
-      console.log(land[4].fruit);
-    }, 5000);
-    return () => clearInterval(test);
-  }, [land, onHarvest, onPlant]);
-
   return (
     <>
       <div
