@@ -63,7 +63,7 @@ export const App: React.FC = () => {
 
   return (
     <>
-      <div id="container">
+      <div id="container" style={{ width: "1000px" }}>
         <Farm />
 
         <Modal centered show={machineState.matches("loading")}>
