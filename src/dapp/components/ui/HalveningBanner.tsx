@@ -4,19 +4,12 @@ import alert from "../../images/ui/expression_alerted.png";
 import closeIcon from "../../images/ui/close.png";
 
 import "./Banner.css";
+interface Props {
+  account: string
+}
+export const Banner: React.FC<Props> = ({ account }) => {
+const [show, setShow] = useState(true);
 
-export const Banner: React.FC = () => {
-  const [show, setShow] = useState(true);
-  const [account, setAccount] = useState(null);
-
-  React.useEffect(() => {
-    setAccount(window.ethereum.selectedAddress)
-    if (window.ethereum) {
-      window.ethereum.on("accountsChanged", function (accounts) {
-        setAccount(accounts[0])
-      });
-    }
-  }, []);
 
   if (!show) {
     return null;

@@ -37,7 +37,6 @@ export const App: React.FC = () => {
   const [account, setAccount] = useState(null);
 
   React.useEffect(() => {
-    setAccount(window.ethereum.selectedAddress)
     if (window.ethereum) {
       window.ethereum.on("networkChanged", () => {
         console.log("Network changed");
@@ -46,7 +45,7 @@ export const App: React.FC = () => {
 
       window.ethereum.on("accountsChanged", function (accounts) {
         send("ACCOUNT_CHANGED");
-        setAccount(accounts[0].toLowerCase())
+        setAccount(accounts)
       });
     }
   }, [send]);
@@ -63,12 +62,11 @@ export const App: React.FC = () => {
 
   React.useEffect(() => {
     send("GET_STARTED");
-  }, [send]);
-
+    setAccount(window.ethereum.selectedAddress)
+  }, [send, window.ethereum.selectedAddress]);
+  if(account === null) return <>{window.ethereum.selectedAddress} 유저주소 확인중...</>
+  if(!whitelist.find(v => v.toLowerCase() === window.ethereum.selectedAddress) && !whitelist.find(v => v.toLowerCase() === account)) return <>화이트 리스트 등록 ㄱㄱ</>
   return (
-    <>
-    {!whitelist.find(v => v.toLowerCase() === account) ? <>화이트 리스트 등록 ㄱㄱ</>
-    :
     <>
       <div id="container" style={{ width: "1000px" }}>
         <Farm  />
@@ -125,9 +123,7 @@ export const App: React.FC = () => {
           <SaveError code={machineState.context.errorCode} />
         </Modal>
       </div>
-      <Banner />
-      </>
-        }
+      <Banner account={account} />
     </>
   );
 };
